@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ppacher/mqtt-home/controller/pkg/mutex"
+	"github.com/own-home/central/pkg/mutex"
 )
 
 type itemValues struct {

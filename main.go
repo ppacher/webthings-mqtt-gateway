@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ppacher/mqtt-home/controller/pkg/cmd"
+import "github.com/own-home/central/pkg/cmd"
 
 func main() {
 	cmd.RootCmd.Execute()

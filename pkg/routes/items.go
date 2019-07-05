@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/ppacher/mqtt-home/controller/pkg/control"
-	"github.com/ppacher/mqtt-home/controller/pkg/errors"
-	"github.com/ppacher/mqtt-home/controller/pkg/registry"
-	"github.com/ppacher/mqtt-home/controller/pkg/spec"
+	"github.com/own-home/central/pkg/control"
+	"github.com/own-home/central/pkg/errors"
+	"github.com/own-home/central/pkg/registry"
+	"github.com/own-home/central/pkg/spec"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/macaron.v1"
 )

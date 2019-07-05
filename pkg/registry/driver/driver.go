@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/ppacher/mqtt-home/controller/pkg/spec"
+	"github.com/own-home/central/pkg/spec"
 )
 
 // SetOptions alter the behavior of the set operation

@@ -1,6 +1,6 @@
 package spec
 
-import "github.com/ppacher/mqtt-home/controller/pkg/payload"
+import "github.com/own-home/central/pkg/payload"
 
 const (
 	// DefaultConnectedTopicTemplate is the default template used when listening for thing

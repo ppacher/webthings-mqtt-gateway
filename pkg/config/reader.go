@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 
 	"github.com/ghodss/yaml"
-	"github.com/ppacher/mqtt-home/controller/pkg/spec"
+	"github.com/own-home/central/pkg/spec"
 )
 
 // ThingFromFile reads a spec.Thing definition in YAML format

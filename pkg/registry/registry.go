@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/ppacher/mqtt-home/controller/pkg/registry/driver"
-	"github.com/ppacher/mqtt-home/controller/pkg/spec"
+	"github.com/own-home/central/pkg/registry/driver"
+	"github.com/own-home/central/pkg/spec"
 )
 
 // Registry is used to store, retrieve and inspect thing definitions

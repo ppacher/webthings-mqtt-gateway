@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/ppacher/mqtt-home/controller/pkg/payload"
+	"github.com/own-home/central/pkg/payload"
 )
 
 // Handler implements `payload.Handler` and is capable of extracting data

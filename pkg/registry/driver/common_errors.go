@@ -3,7 +3,7 @@ package driver
 import (
 	"net/http"
 
-	"github.com/ppacher/mqtt-home/controller/pkg/errors"
+	"github.com/own-home/central/pkg/errors"
 )
 
 var (

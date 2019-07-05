@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ppacher/mqtt-home/controller/pkg/mutex"
-	"github.com/ppacher/mqtt-home/controller/pkg/registry/driver"
-	"github.com/ppacher/mqtt-home/controller/pkg/spec"
+	"github.com/own-home/central/pkg/mutex"
+	"github.com/own-home/central/pkg/registry/driver"
+	"github.com/own-home/central/pkg/spec"
 )
 
 func init() {

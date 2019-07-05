@@ -4,8 +4,8 @@ import (
 	"context"
 
 	"github.com/go-macaron/binding"
-	"github.com/ppacher/mqtt-home/controller/pkg/errors"
-	"github.com/ppacher/mqtt-home/controller/pkg/spec"
+	"github.com/own-home/central/pkg/errors"
+	"github.com/own-home/central/pkg/spec"
 	"gopkg.in/macaron.v1"
 )
 

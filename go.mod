@@ -1,4 +1,4 @@
-module github.com/ppacher/mqtt-home/controller
+module github.com/own-home/central
 
 go 1.12
 

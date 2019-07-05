@@ -6,8 +6,8 @@ import (
 	"sync"
 
 	mqtt "github.com/eclipse/paho.mqtt.golang"
-	"github.com/ppacher/mqtt-home/controller/pkg/registry"
-	"github.com/ppacher/mqtt-home/controller/pkg/spec"
+	"github.com/own-home/central/pkg/registry"
+	"github.com/own-home/central/pkg/spec"
 
 	"github.com/sirupsen/logrus"
 )

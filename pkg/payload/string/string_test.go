@@ -3,7 +3,7 @@ package string
 import (
 	"testing"
 
-	"github.com/ppacher/mqtt-home/controller/pkg/payload"
+	"github.com/own-home/central/pkg/payload"
 	"github.com/stretchr/testify/assert"
 )
 

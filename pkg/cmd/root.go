@@ -12,23 +12,23 @@ import (
 	"github.com/spf13/cobra"
 
 	mqtt "github.com/eclipse/paho.mqtt.golang"
-	"github.com/ppacher/mqtt-home/controller/pkg/config"
-	"github.com/ppacher/mqtt-home/controller/pkg/control"
-	"github.com/ppacher/mqtt-home/controller/pkg/middleware/render"
-	"github.com/ppacher/mqtt-home/controller/pkg/registry"
-	"github.com/ppacher/mqtt-home/controller/pkg/routes"
-	"github.com/ppacher/mqtt-home/controller/pkg/server"
-	"github.com/ppacher/mqtt-home/controller/pkg/spec"
+	"github.com/own-home/central/pkg/config"
+	"github.com/own-home/central/pkg/control"
+	"github.com/own-home/central/pkg/middleware/render"
+	"github.com/own-home/central/pkg/registry"
+	"github.com/own-home/central/pkg/routes"
+	"github.com/own-home/central/pkg/server"
+	"github.com/own-home/central/pkg/spec"
 
 	"gopkg.in/macaron.v1"
 
 	// Import registry storage drivers
-	_ "github.com/ppacher/mqtt-home/controller/pkg/registry/driver/memory"
+	_ "github.com/own-home/central/pkg/registry/driver/memory"
 
 	// Import payload handler types
-	_ "github.com/ppacher/mqtt-home/controller/pkg/payload/json"
-	_ "github.com/ppacher/mqtt-home/controller/pkg/payload/lua"
-	_ "github.com/ppacher/mqtt-home/controller/pkg/payload/string"
+	_ "github.com/own-home/central/pkg/payload/json"
+	_ "github.com/own-home/central/pkg/payload/lua"
+	_ "github.com/own-home/central/pkg/payload/string"
 )
 
 var cfg *config.Config
