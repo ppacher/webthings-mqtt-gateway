@@ -1,6 +1,7 @@
 # OwnHome Central
 
-> Your central hub for [OwnHome](https://own-home.github.io)!
+<p align="center"> Your central hub for [OwnHome](https://own-home.github.io)! </p>
+
 
 Right now, `home-central` - or just `central` - is a HTTP <-> MQTT proxy for smart-homes. It exposes MQTT based things and devices via a RESTful HTTP API following the [Web-of-Things specification (WoT)](https://iot.mozilla.org/wot/) from Mozilla and is part of the `OwnHome` project.
 
