@@ -1,0 +1,33 @@
+'@context': https://iot.mozilla.org/schemas/
+'@type':
+  - BinarySensor
+id: paz
+title: Paz-Handy
+description: User tracking using OwnTracks
+location: owntracks
+mqtt:
+  propertyDefaults:
+    statusTopic: "{{.thing.ID}}/status/{{.thing.Location}}/{{.item.ID}}"
+    statusHandler:
+      type: json-extended
+properties:
+  phone_power:
+    '@type': LevelProperty
+    unit: percent
+    minimum: 0
+    maximum: 100
+    multipleOf: 1
+    title: Telefon-Akku
+    readOnly: true
+  is_home:
+    title: Zuhause
+    '@type': BooleanProperty
+    readOnly: true
+    status_report_handler:
+      type: lua
+      content: json
+      return: value.val == 1 
+  location:
+    title: GPS-Koordinaten
+    type: string
+    readOnly: true

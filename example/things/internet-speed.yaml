@@ -1,0 +1,18 @@
+id: internet
+title: Internet
+description: Internet Speed
+mqtt:
+  propertyDefaults:
+    statusHandler:
+      type: json-extended
+properties:
+  upload:
+    type: number
+    unit: Mb/s
+    title: Upload
+    readOnly: true
+  download:
+    type: number
+    unit: Mb/s
+    title: Download
+    readOnly: true

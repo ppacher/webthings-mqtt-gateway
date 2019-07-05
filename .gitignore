@@ -1,0 +1,7 @@
+config.yml
+.vscode
+.o
+.idea
+dist
+private
+

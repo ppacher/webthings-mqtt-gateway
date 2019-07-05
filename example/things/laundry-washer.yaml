@@ -1,0 +1,48 @@
+#
+# Thing: Laundry Washer
+#
+# Description:
+#   Laundry washer connected to a TP-Link HS110 Smart WiFi plug with energy meter
+#   The HS110 plug is controlled using github.com/ppacher/envel
+#
+
+'@context': https://iot.mozilla.org/schemas/
+'@type': 
+  - OnOffSwitch
+  - EnergyMonitor
+id: waschmachine
+title: Waschmachine
+description: TP-Link HS110
+icon: https://image.flaticon.com/icons/svg/963/963677.svg
+mqtt:
+  propertyDefaults:
+    statusHandler:
+      type: json-extended
+properties:
+  state:
+    '@type': OnOffProperty
+    type: boolean
+    title: Status
+    mqtt:
+      statusHandler:
+        type: lua
+        return: json(value).val == 1
+  voltage:
+    title: Volt
+    '@type': VoltageProperty
+    type: number
+    readOnly: true
+  current:
+    title: Ampere
+    '@type': CurrentProperty
+    type: number
+    readOnly: true
+  power:
+    title: InstantaneousPowerProperty
+    type: number
+    readOnly: true
+  total:
+    title: Verbrauch
+    type: number
+    unit: kW/h
+    readOnly: true

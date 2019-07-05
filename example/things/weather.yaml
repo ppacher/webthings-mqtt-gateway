@@ -1,0 +1,41 @@
+'@context': https://iot.mozilla.org/schemas/
+'@type': [TemperatureSensor]
+id: weather
+title: Wetter
+description: Weather conditions from openweathermap.org
+mqtt:
+  propertyDefaults:
+    statusHandler:
+      type: json-extended
+properties:
+  temperature:
+    title: Temperatur
+    unit: degree celsius
+    '@type': TemperatureProperty
+    type: number
+    readOnly: true
+  pressure:
+    title: Luftdruck
+    unit: mB
+    type: number
+    readOnly: true
+  humidity:
+    title: Luftfeuchtigkeit
+    unit: percent
+    '@type': LevelProperty
+    type: number
+    minimum: 0
+    maximum: 100
+    readOnly: true
+  sunrise:
+    title: Sonnenaufgang
+    type: number
+    '@context': https://iot.ppacher.at/schemas/
+    '@type': TimestampProperty
+    readOnly: true
+  sunset:
+    title: Sonnenuntergang
+    type: number
+    '@context': https://iot.ppacher.at/schemas/
+    '@type': TimestampProperty
+    readOnly: true
