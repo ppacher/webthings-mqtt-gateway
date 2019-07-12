@@ -27,6 +27,15 @@ properties:
       statusHandler:
         type: lua
         return: json(value).val == 1
+  in_use:
+    '@type': BooleanProperty
+    type: boolean
+    title: Waschen
+    readOnly: true
+    mqtt:
+      statusHandler:
+        type: lua
+        return: json(value).val == 1
   voltage:
     title: Volt
     '@type': VoltageProperty
@@ -38,7 +47,8 @@ properties:
     type: number
     readOnly: true
   power:
-    title: InstantaneousPowerProperty
+    title: Leistung
+    '@type': InstantaneousPowerProperty
     type: number
     readOnly: true
   total:

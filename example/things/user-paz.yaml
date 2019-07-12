@@ -23,11 +23,23 @@ properties:
     title: Zuhause
     '@type': BooleanProperty
     readOnly: true
-    status_report_handler:
-      type: lua
-      content: json
-      return: value.val == 1 
+    mqtt:
+      statusHandler:
+        type: lua
+        content: json
+        return: value.val == 1 
   location:
+    '@type': OHLocationProperty
     title: GPS-Koordinaten
-    type: string
+    type: object
     readOnly: true
+    mqtt:
+      statusHandler:
+        type: lua
+        content: json
+        code: |
+          local t = {}
+          for str in string.gmatch(value.val, "([^,]+)") do
+            table.insert(t, str)
+          end
+          return map({ latitude=t[1] , longitude=t[2] , precision=t[3] })

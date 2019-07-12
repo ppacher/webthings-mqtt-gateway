@@ -31,11 +31,11 @@ properties:
     title: Sonnenaufgang
     type: number
     '@context': https://iot.ppacher.at/schemas/
-    '@type': TimestampProperty
+    '@type': OHTimestampProperty
     readOnly: true
   sunset:
     title: Sonnenuntergang
     type: number
     '@context': https://iot.ppacher.at/schemas/
-    '@type': TimestampProperty
+    '@type': OHTimestampProperty
     readOnly: true

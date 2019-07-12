@@ -1,0 +1,22 @@
+'@context': https://iot.mozilla.org/schemas/
+'@type':
+  - OnOffSwitch
+id: test-switch
+title: Test Swtich
+description: A virtual test switch
+properties:
+  state:
+    '@type': OnOffProperty
+    type: boolean
+    title: Status
+    mqtt:
+      statusHandler:
+        type: json-extended
+  rostate:
+    '@type': OnOffProperty
+    type: boolean
+    title: Ro-Status
+    readOnly: true
+    mqtt:
+      statusHandler:
+        type: json-extended

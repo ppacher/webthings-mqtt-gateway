@@ -78,14 +78,20 @@ func getValues(ctx context.Context, thingID ThingID, propID PropertyID, store re
 }
 
 func setProperty(ctx context.Context, m *macaron.Context, thingID ThingID, propID PropertyID, control *control.MissionControl) interface{} {
-	var x interface{}
+	var x map[string]interface{}
+
 	defer m.Req.Request.Body.Close()
 	err := json.NewDecoder(m.Req.Request.Body).Decode(&x)
 	if err != nil {
 		return errors.WrapWithStatus(400, err)
 	}
 
-	if err := control.SetItem(ctx, string(thingID), string(propID), x); err != nil {
+	value, ok := x[string(propID)]
+	if !ok {
+		return errors.NewWithStatus(400, "Invalid payload")
+	}
+
+	if err := control.SetItem(ctx, string(thingID), string(propID), value); err != nil {
 		return err
 	}
 
