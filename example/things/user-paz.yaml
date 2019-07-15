@@ -13,14 +13,15 @@ mqtt:
 properties:
   phone_power:
     '@type': LevelProperty
+    type: number
     unit: percent
     minimum: 0
     maximum: 100
-    multipleOf: 1
     title: Telefon-Akku
     readOnly: true
   is_home:
     title: Zuhause
+    type: boolean
     '@type': BooleanProperty
     readOnly: true
     mqtt:
@@ -28,18 +29,4 @@ properties:
         type: lua
         content: json
         return: value.val == 1 
-  location:
-    '@type': OHLocationProperty
-    title: GPS-Koordinaten
-    type: object
-    readOnly: true
-    mqtt:
-      statusHandler:
-        type: lua
-        content: json
-        code: |
-          local t = {}
-          for str in string.gmatch(value.val, "([^,]+)") do
-            table.insert(t, str)
-          end
-          return map({ latitude=t[1] , longitude=t[2] , precision=t[3] })
+  

@@ -2,7 +2,6 @@ package routes
 
 import (
 	"context"
-	"fmt"
 	"net/http"
 
 	"github.com/own-home/central/pkg/middleware/render"
@@ -21,12 +20,7 @@ func getAllThings(ctx context.Context, m *macaron.Context, store registry.Regist
 
 	var models []*thingModel
 
-	proto := "http://"
-	if m.Req.TLS != nil {
-		proto = "https://"
-	}
-
-	baseURL := fmt.Sprintf("%s%s/api/v1/things", proto, m.Req.Host)
+	baseURL := "/api/v1/things"
 	for _, t := range things {
 		model, err := getThingModel(baseURL, t)
 		if err != nil {

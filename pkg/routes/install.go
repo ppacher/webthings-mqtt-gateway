@@ -72,6 +72,14 @@ func Install(m *macaron.Macaron) error {
 						m.Post("", setProperty)
 					}, propID)
 				})
+
+				m.Get("/actions", func() []string {
+					return []string{}
+				})
+				m.Get("/events", func() []string {
+					return []string{}
+				})
+
 			}, thingID)
 		})
 	})

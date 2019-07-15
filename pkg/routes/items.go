@@ -43,7 +43,7 @@ func getProperty(ctx context.Context, m *macaron.Context, thingID ThingID, propI
 
 	prop, ok := thing.Properties[string(propID)]
 	if !ok {
-		return errors.NewWithStatus(404, "unknown property")
+		return errors.NewWithStatus(404, "unknown property: "+string(propID))
 	}
 
 	value, err := store.GetItemValue(ctx, string(thingID), string(propID))

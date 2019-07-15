@@ -1,3 +1,4 @@
+'@context': https://iot.mozilla.org/schemas/
 id: internet
 title: Internet
 description: Internet Speed
@@ -7,12 +8,14 @@ mqtt:
       type: json-extended
 properties:
   upload:
-    type: number
+    '@type': NumberProperty
     unit: Mb/s
+    type: number
     title: Upload
     readOnly: true
   download:
-    type: number
+    '@type': NumberProperty
     unit: Mb/s
+    type: number
     title: Download
     readOnly: true

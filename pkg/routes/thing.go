@@ -2,7 +2,6 @@ package routes
 
 import (
 	"context"
-	"fmt"
 	"net/http"
 
 	"github.com/own-home/central/pkg/errors"
@@ -18,12 +17,7 @@ func getThing(ctx context.Context, m *macaron.Context, thingID ThingID, store re
 		return err
 	}
 
-	proto := "http://"
-	if m.Req.TLS != nil {
-		proto = "https://"
-	}
-
-	baseURL := fmt.Sprintf("%s%s/api/v1/things", proto, m.Req.Host)
+	baseURL := "/api/v1/things"
 	model, err := getThingModel(baseURL, thing)
 	if err != nil {
 		return err
