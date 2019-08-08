@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/own-home/central/pkg/payload"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/payload"
 	"github.com/yalp/jsonpath"
 )
 

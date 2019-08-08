@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/own-home/central/pkg/payload"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/payload"
 )
 
 // Handler implements `payload.Handler` and is capable of extracting data

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/own-home/central/pkg/payload"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/payload"
 	lua "github.com/yuin/gopher-lua"
 	luar "layeh.com/gopher-luar"
 )

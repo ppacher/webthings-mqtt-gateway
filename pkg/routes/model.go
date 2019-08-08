@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/own-home/central/pkg/spec"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/spec"
 )
 
 var schemeRe = regexp.MustCompile("^[a-z]+://.*$")

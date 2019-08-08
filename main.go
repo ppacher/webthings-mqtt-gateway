@@ -1,6 +1,6 @@
 package main
 
-import "github.com/own-home/central/pkg/cmd"
+import "github.com/ppacher/webthings-mqtt-gateway/pkg/cmd"
 
 func main() {
 	cmd.RootCmd.Execute()

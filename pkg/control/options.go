@@ -2,7 +2,7 @@ package control
 
 import (
 	mqtt "github.com/eclipse/paho.mqtt.golang"
-	"github.com/own-home/central/pkg/registry"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/registry"
 	"github.com/sirupsen/logrus"
 )
 

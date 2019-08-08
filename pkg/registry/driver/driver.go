@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/own-home/central/pkg/spec"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/spec"
 )
 
 // SetOptions alter the behavior of the set operation

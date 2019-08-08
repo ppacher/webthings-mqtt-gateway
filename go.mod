@@ -1,4 +1,4 @@
-module github.com/own-home/central
+module github.com/ppacher/webthings-mqtt-gateway
 
 go 1.12
 

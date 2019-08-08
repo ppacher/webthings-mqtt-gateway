@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/ghodss/yaml"
-	"github.com/own-home/central/pkg/errors"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/macaron.v1"
 )

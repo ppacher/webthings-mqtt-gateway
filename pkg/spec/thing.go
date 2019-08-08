@@ -1,6 +1,6 @@
 package spec
 
-import "github.com/own-home/central/pkg/payload"
+import "github.com/ppacher/webthings-mqtt-gateway/pkg/payload"
 
 const (
 	// DefaultConnectedTopicTemplate is the default template used when listening for thing

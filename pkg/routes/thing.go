@@ -4,9 +4,9 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/own-home/central/pkg/errors"
-	"github.com/own-home/central/pkg/registry"
-	"github.com/own-home/central/pkg/spec"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/errors"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/registry"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/spec"
 	"gopkg.in/macaron.v1"
 )
 

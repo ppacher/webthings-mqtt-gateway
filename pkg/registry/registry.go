@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/own-home/central/pkg/registry/driver"
-	"github.com/own-home/central/pkg/spec"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/registry/driver"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/spec"
 )
 
 // Registry is used to store, retrieve and inspect thing definitions

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/own-home/central/pkg/errors"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/errors"
 )
 
 var (

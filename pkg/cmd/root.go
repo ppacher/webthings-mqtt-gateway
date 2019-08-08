@@ -12,23 +12,23 @@ import (
 	"github.com/spf13/cobra"
 
 	mqtt "github.com/eclipse/paho.mqtt.golang"
-	"github.com/own-home/central/pkg/config"
-	"github.com/own-home/central/pkg/control"
-	"github.com/own-home/central/pkg/middleware/render"
-	"github.com/own-home/central/pkg/registry"
-	"github.com/own-home/central/pkg/routes"
-	"github.com/own-home/central/pkg/server"
-	"github.com/own-home/central/pkg/spec"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/config"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/control"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/middleware/render"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/registry"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/routes"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/server"
+	"github.com/ppacher/webthings-mqtt-gateway/pkg/spec"
 
 	"gopkg.in/macaron.v1"
 
 	// Import registry storage drivers
-	_ "github.com/own-home/central/pkg/registry/driver/memory"
+	_ "github.com/ppacher/webthings-mqtt-gateway/pkg/registry/driver/memory"
 
 	// Import payload handler types
-	_ "github.com/own-home/central/pkg/payload/json"
-	_ "github.com/own-home/central/pkg/payload/lua"
-	_ "github.com/own-home/central/pkg/payload/string"
+	_ "github.com/ppacher/webthings-mqtt-gateway/pkg/payload/json"
+	_ "github.com/ppacher/webthings-mqtt-gateway/pkg/payload/lua"
+	_ "github.com/ppacher/webthings-mqtt-gateway/pkg/payload/string"
 )
 
 var cfg *config.Config
