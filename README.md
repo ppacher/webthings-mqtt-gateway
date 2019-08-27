@@ -1,5 +1,9 @@
 # WebThings-MQTT-Gateway
 
+[![Build Status](https://travis-ci.com/ppacher/webthings-mqtt-gateway.svg?branch=master)](https://travis-ci.com/ppacher/webthings-mqtt-gateway)
+[![codecov](https://codecov.io/gh/ppacher/webthings-mqtt-gateway/branch/master/graph/badge.svg)](https://codecov.io/gh/ppacher/webthings-mqtt-gateway)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ppacher/webthings-mqtt-gateway)](https://goreportcard.com/report/github.com/ppacher/webthings-mqtt-gateway)
+
 This repository contains a WebThings to MQTT gateway. It exposes services and devices that publish to MQTT via a RESTful HTTP API following the [Web-of-Things specification (WoT)](https://iot.mozilla.org/wot/) from Mozilla
 
 On the MQTT side the gateway defaults to the [MQTT-SmartHome architecture](https://github.com/mqtt-smarthome/mqtt-smarthome) but can be configured to allow integration of almost everything that can publish to MQTT
